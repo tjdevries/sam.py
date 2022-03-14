@@ -1,5 +1,6 @@
 def my_func() -> None:
-    print("Hello, this is my_func")
+    """This is my function"""
+    pass
 
 
 if __name__ == "__main__":
