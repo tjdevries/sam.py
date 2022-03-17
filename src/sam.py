@@ -7,8 +7,7 @@ def my_func() -> int:
 def other_func() -> None:
     """Wow, this calls some stuff"""
     x = my_func()
-    exported_func()
+    exported_func("hello",  "world")
     print(x)
 
-if __name__ == "__main__":
-    my_func()
+my_func()

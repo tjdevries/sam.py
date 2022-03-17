@@ -1,5 +1,5 @@
-def exported_func():
+def exported_func(a: str, b: str) -> str:
     """This is the
     docstring from
     an exported function"""
-    pass
+    return a + b
