@@ -11,3 +11,9 @@ def other_func() -> None:
     print(x)
 
 my_func()
+
+
+class ThisClass:
+    """This Class Is A Thing"""
+
+    pass
