@@ -17,7 +17,7 @@ class ThisClass:
     """This Class Is A Thing"""
 
     a: int
-    b :str
+    b: str
 
     def __init__(self, a: int, b: str):
         self.a = a
