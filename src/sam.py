@@ -8,7 +8,7 @@ def other_func() -> None:
     """Wow, this calls some stuff"""
     x = my_func()
     exported_func("hello")
-    print(x)
+    print(ThisClass(x, "str"))
 
 my_func()
 
@@ -16,4 +16,9 @@ my_func()
 class ThisClass:
     """This Class Is A Thing"""
 
-    pass
+    a: int
+    b :str
+
+    def __init__(self, a: int, b: str):
+        self.a = a
+        self.b = b
