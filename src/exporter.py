@@ -3,11 +3,11 @@ def my_decorator(f):
 
 
 @my_decorator
-def exported_func(a: str, b: str = ", World!") -> str:
+def exported_func(abc: str, b: str = ", World!") -> str:
     """This is the
     docstring from
     an exported function
 
-    :param a: Describing cool parameter `a`
+    :param abc: Describing cool parameter `abc`
     """
-    return a + b
+    return abc + b

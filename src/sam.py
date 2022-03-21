@@ -7,7 +7,7 @@ def my_func() -> int:
 def other_func() -> None:
     """Wow, this calls some stuff"""
     x = my_func()
-    exported_func(a="hello")
+    exported_func(abc="hello")
     print(ThisClass(x))
 
 my_func()
