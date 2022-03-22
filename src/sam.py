@@ -1,8 +1,10 @@
 from .exporter import exported_func
 
-def my_func() -> int:
+default_val = 5
+
+def my_func(val=default_val) -> int:
     """This is my function"""
-    return 5
+    return val
 
 def other_func() -> None:
     """Wow, this calls some stuff"""
