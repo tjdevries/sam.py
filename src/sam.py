@@ -1,6 +1,7 @@
 from .exporter import exported_func
 
 default_val = 5
+default_val = 7
 
 def my_func(val=default_val) -> int:
     """This is my function"""
