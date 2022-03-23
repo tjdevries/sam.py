@@ -6,6 +6,7 @@ default_val = 7
 def my_func(val=default_val) -> int:
     """This is my function"""
     x = 10
+    x = 12
     return x * (val or default_val)
 
 def other_func() -> None:
