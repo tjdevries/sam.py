@@ -1,7 +1,12 @@
+import requests
+
 from .exporter import exported_func
+from .exporter import ExportedClass
 
 default_val = 5
 default_val = 7
+
+EXPORTED_CLASS = ExportedClass()
 
 def my_func(val=default_val) -> int:
     """This is my function"""
@@ -15,8 +20,6 @@ def other_func() -> None:
     exported_func(abc="hello")
     print(ThisClass(x))
 
-my_func()
-
 
 class ThisClass:
     a: int
@@ -24,3 +27,8 @@ class ThisClass:
 
     def __init__(self, a: int):
         self.a = a
+
+if __name__ == '__main__':
+    my_func()
+    r = requests.get("https://google.com")
+

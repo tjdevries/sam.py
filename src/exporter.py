@@ -11,3 +11,6 @@ def exported_func(abc: str, b: str = ", World!") -> str:
     :param abc: Describing cool parameter `abc`
     """
     return abc + b
+
+class ExportedClass:
+    pass
