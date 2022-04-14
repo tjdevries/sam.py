@@ -14,6 +14,9 @@ def my_func(val=default_val) -> int:
     x = 12
     return x * (val or default_val)
 
+def func_should_return_int(x: int):
+    return x * 2
+
 def other_func() -> None:
     """Wow, this calls some stuff"""
     x = my_func()
