@@ -1,3 +1,5 @@
+import json
+
 import requests
 
 from .exporter import exported_func
@@ -22,6 +24,9 @@ def other_func() -> None:
     x = my_func()
     exported_func(abc="hello")
     print(ThisClass(x))
+
+def uses_json() -> None:
+    print(json.loads('{"hello": "world"}'))
 
 
 class ThisClass:
