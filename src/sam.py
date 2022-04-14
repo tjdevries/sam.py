@@ -9,7 +9,7 @@ import requests
 from .exporter import exported_func
 from .exporter import ExportedClass
 
-default_val = 5
+default_val = 6
 default_val = 7
 
 EXPORTED_CLASS = ExportedClass()
