@@ -7,6 +7,7 @@ CI Attempt: 2
 import json
 
 import requests
+import leftpad
 
 import exporter
 from .exporter import exported_func
