@@ -46,7 +46,7 @@ class ThisClass:
 
 if __name__ == '__main__':
     my_func()
-    r = requests.get("https://google.com")
+    requests.get("https://google.com")
 
     print(exporter.exported_func == exported_func)
 
