@@ -9,7 +9,7 @@ import sqlparse
 class ShouldConsole:
     def __init__(self):
         self.x = 1
-        print(sqlparse)
+        print(sqlparse.format)
 
     def other(self):
         print(self.x)
