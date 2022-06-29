@@ -7,11 +7,14 @@ CI Attempt: 2
 import sqlparse
 from sqlparse import sql
 
+import json_to_model
+
 class ShouldConsole:
     def __init__(self):
         self.x = 1
         print(sqlparse.format)
         print(sql.NameAliasMixin)
+        print(json_to_model)
 
     def other(self):
         print(self.x)
