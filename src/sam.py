@@ -8,6 +8,7 @@ import sqlparse
 from sqlparse import sql
 
 import json_to_model
+from yaml import dump
 
 class ShouldConsole:
     def __init__(self):
@@ -15,6 +16,7 @@ class ShouldConsole:
         print(sqlparse.format)
         print(sql.NameAliasMixin)
         print(json_to_model)
+        print(dump)
 
     def other(self):
         print(self.x)
