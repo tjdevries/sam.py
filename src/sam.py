@@ -12,7 +12,7 @@ from yaml import dump
 
 class ShouldConsole:
     def __init__(self):
-        self.x = 1
+        self.x: int = 1
         print(sqlparse.format)
         print(sql.NameAliasMixin)
         print(json_to_model)
