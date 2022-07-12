@@ -12,6 +12,8 @@ from sqlparse import sql
 import json_to_model
 from yaml import dump
 
+import checkov
+
 class ShouldConsole:
     def __init__(self):
         self.x: int = 1
@@ -19,6 +21,7 @@ class ShouldConsole:
         print(sql.NameAliasMixin)
         print(json_to_model)
         print(dump)
+        print(checkov)
 
     def other(self):
         print(self.x)
