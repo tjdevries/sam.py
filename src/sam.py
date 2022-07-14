@@ -7,24 +7,18 @@ CI Attempt: 4
 from typing import Sequence
 
 import sqlparse
-from sqlparse import sql
-
-import json_to_model
-from yaml import dump
-
-import checkov
 
 class ShouldConsole:
     def __init__(self):
         self.x: int = 1
         print(sqlparse.format)
-        print(sql.NameAliasMixin)
-        print(json_to_model)
-        print(dump)
-        print(checkov)
 
     def other(self):
         print(self.x)
+
+class InheritsConsole(ShouldConsole):
+    def other(self):
+        print("OTHER", self.x)
 
 def x(s: Sequence[int]):
     print([x for x in s])
