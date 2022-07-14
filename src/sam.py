@@ -20,5 +20,8 @@ class InheritsConsole(ShouldConsole):
     def other(self):
         print("OTHER", self.x)
 
+    def unrelated(self):
+        print("NOT RELATED")
+
 def x(s: Sequence[int]):
     print([x for x in s])
