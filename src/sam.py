@@ -8,6 +8,17 @@ from typing import Sequence
 
 import sqlparse
 
+from django.db import models
+
+class Blog(models.Model):
+    name = models.CharField(max_length=100)
+    tagline = models.TextField()
+
+    def save(self, *args, **kwargs):
+        print("starting save...")
+        super().save(*args, **kwargs)  # Call the "real" save() method.
+        print("... all done!")
+
 class ShouldConsole:
     def __init__(self):
         self.x: int = 1
